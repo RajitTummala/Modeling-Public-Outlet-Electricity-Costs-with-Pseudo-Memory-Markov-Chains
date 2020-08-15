@@ -24,7 +24,7 @@ It is a *memoryless*, *stochastic* model to describe the *state* of an object ov
 Let's break this down:
 * memoryless = it does not remember previous iterations
 * stochastic = each time you run the model, you could get a different result even if the model's properties remain constant
-* state = think binary numbers, either [0] or [1], 1 and 2 are mutually exclusive (cannot occur concurrently) states
+* state = think binary numbers, either [0] or [1], where both are mutually exclusive (cannot occur concurrently) states
 
 Before you look at Figure 1, I would reccommend visiting [this website](https://setosa.io/blog/2014/07/26/markov-chains/index.html) for a general visualization and intuitive understanding of Markov Chains.
 
@@ -54,7 +54,7 @@ The function takes inspiration from the sigmoid neuron in machine learning, wher
 | 99% | .99 | .17| 17% |
 | 50% | .50 | .29| 29% | 
 
-As you can see, the function predicts that a person still at 50% will be less likely to enter a charging state than a 50-50 previous models predictions. The magnitude for the rate of change for the battery charge over the probability of `X1` or `Y1` decreases to represent a less of a call to action to charge when the battery changes from %80 to %60 than from %30 to %10. A further improvement of the model would be to implement an `if` statement so that the reverse behavior would hold true in a [Charging] state but the same would still apply in a [Not Charging State], but due to time constraints, the improvement did not materialize.
+As you can see, the function predicts that a person still at 50% will be less likely to enter a charging state than a 50-50 previous models predictions. The magnitude for the rate of change for the battery charge over the probability of `X1` or `Y1` decreases to represent a less of a call to action to charge when the battery changes from %80 to %60 than from %30 to %10. A further improvement of the model would be to implement an `if` statement so that the reverse behavior would hold true in a [Charging] state but the same would still apply in a [Not Charging State], but due to time constraints, this improvement did not materialize.
 
 ### iv. Electricity Costs
-This is simply the total hours of charging with the outlets from a public place. Conversions to cost to more conventional units of cost were performed in the paper hyperlinked above and now <a href="https://drive.google.com/file/d/1VrkC2M26mnis0jesCBb7r3mjHWoVoSTI/view?usp=sharing" target="_blank">here</a>
+This is simply the total hours of charging ( `totalAvgOfHours` ) with the outlets from a public place for `numOfDevices` devices over the time interval of `days`. The variable `totalAvgOfHours` has the phrase "Avg" to mean average because the Markov Model was iterated an `numOfTrials` because Markov Chains are stochastic. Conversions of cost to more conventional units of cost were performed in the paper hyperlinked above and now <a href="https://drive.google.com/file/d/1VrkC2M26mnis0jesCBb7r3mjHWoVoSTI/view?usp=sharing" target="_blank">here</a>.
