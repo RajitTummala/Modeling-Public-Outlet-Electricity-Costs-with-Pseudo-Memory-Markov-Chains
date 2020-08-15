@@ -1,5 +1,5 @@
 # Modeling Electricity Costs from Public Outlet Usage through a Battery-Adjusted Pseudo-Memory Markov Chains
----
+
 This code uses altered Markov Chains to predict how many hours people charged their phones at a public place based on two key features:
 1.  An average number of devices typically in the public place ( `numOfDevices` )
 2.  A certain time interval measured in days ( `days` )
