@@ -26,9 +26,14 @@ Let's break this down:
 * stochastic = each time you run the model, you could get a different result even if the model's properties remain constant
 * state = think binary numbers, either [0] or [1], 1 and 2 are mutually exclusive (cannot occur concurrently) states
 
+Before you look at Figure 1, I would reccommend visiting [this website](https://setosa.io/blog/2014/07/26/markov-chains/index.html) for a general visualization and intuitive understanding of Markov Chains.
 
+#### *Figure 1. Problem-Specific Markov Chain Model*
+
+<img src="https://github.com/rajtum/Modeling-Public-Outlet-Electricity-Costs-with-Pseudo-Memory-Markov-Chains/blob/master/Models/General%20Markov%20Model.PNG" width="700">
 
 ### ii. Pseudo-Memory
+False-memory, or *pseudo-memory* was a term created to describe the later models, where the *transition matrix* was adjusted based on the time and battery. In these models, the model's previous iterations had impacted the probabilities of the current *transition matrix*, but the *transition matrix* was adjusted based only current state. It was termed *psuedo* because the memory demands (1) storage of the information and (2) the ability to recall the information. Though the model weakly satisfied (1) in how past iterations influenced the current *transition matrix* in a manner which the model's previous states could be deduced, but the model does not actively recall this information in the model, therefore model's memory is more pretense than actuality.
 
 ### iii. Battery-Adjusted
 
