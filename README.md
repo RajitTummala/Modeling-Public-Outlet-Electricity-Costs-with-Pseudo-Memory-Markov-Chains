@@ -1,5 +1,7 @@
 # Modeling Electricity Costs from Public Outlet Usage through a Battery-Adjusted Pseudo-Memory Markov Chains
 
+*This Markov chain model was developed during the High School Mathematical Contest in Modeling (HiMCM) over the course of three days concurrently with complimentary models found in this <a href="https://drive.google.com/file/d/1VrkC2M26mnis0jesCBb7r3mjHWoVoSTI/view?usp=sharing" target="_blank"><em>full paper</em></a> which was awarded as an International Finalist by HiMCM.*
+
 Don't worry if some of the terms in the title seem alien to you, we will hopefully go over each one in this guide. 
 
 ## I. Purpose
@@ -58,3 +60,5 @@ As you can see, the function predicts that a person still at 50% will be less li
 
 ### iv. Electricity Costs
 This is simply the total hours of charging ( `totalAvgOfHours` ) with the outlets from a public place for `numOfDevices` devices over the time interval of `days`. The variable `totalAvgOfHours` has the phrase "Avg" to mean average because the Markov Model was iterated an `numOfTrials` because Markov Chains are stochastic. Conversions of cost to more conventional units of cost were performed in the paper hyperlinked above and now <a href="https://drive.google.com/file/d/1VrkC2M26mnis0jesCBb7r3mjHWoVoSTI/view?usp=sharing" target="_blank">here</a>.
+
+## IV. Evolution of Models
