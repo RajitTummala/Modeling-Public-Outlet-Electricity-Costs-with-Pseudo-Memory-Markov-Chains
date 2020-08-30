@@ -62,3 +62,23 @@ As you can see, the function predicts that a person still at 50% will be less li
 This is simply the total hours of charging ( `totalAvgOfHours` ) with the outlets from a public place for `numOfDevices` devices over the time interval of `days`. The variable `totalAvgOfHours` has the phrase "Avg" to mean average because the Markov Model was iterated an `numOfTrials` because Markov Chains are stochastic. Conversions of cost to more conventional units of cost were performed in the paper hyperlinked above and now <a href="https://drive.google.com/file/d/1VrkC2M26mnis0jesCBb7r3mjHWoVoSTI/view?usp=sharing" target="_blank">here</a>.
 
 ## IV. Evolution of Models
+
+*Comprehensive explanations of each model and rationale for certain variables can be found in the* <a href="https://drive.google.com/file/d/1VrkC2M26mnis0jesCBb7r3mjHWoVoSTI/view?usp=sharing" target="_blank"><em>full paper</em></a>*, but here are all the models from the most rudimentary probability model to the most advanced pseudo-memory Markov chain:*
+
+***
+
+<img src="https://github.com/rajtum/Modeling-Public-Outlet-Electricity-Costs-with-Pseudo-Memory-Markov-Chains/blob/master/Models/Model%201%20-%20Simple%20Probability%20Model.png" width="700">
+
+***
+
+<img src="https://github.com/rajtum/Modeling-Public-Outlet-Electricity-Costs-with-Pseudo-Memory-Markov-Chains/blob/master/Models/Model%202%20-%20Fixed-Transition%20Model.png" width="700">
+
+***
+
+<img src="https://github.com/rajtum/Modeling-Public-Outlet-Electricity-Costs-with-Pseudo-Memory-Markov-Chains/blob/master/Models/Model%203%20-%20Time-Adjusted%20Model.png" width="700">
+
+***
+
+<img src="https://github.com/rajtum/Modeling-Public-Outlet-Electricity-Costs-with-Pseudo-Memory-Markov-Chains/blob/master/Models/Model%204%20-%20Battery-Adjusted%20Graph%20Model.png" width="700">
+
+***
