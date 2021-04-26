@@ -2,8 +2,6 @@
 
 *This Markov chain model was developed during the High School Mathematical Contest in Modeling (HiMCM) over the course of three days concurrently with complimentary models found in this <a href="https://drive.google.com/file/d/1VrkC2M26mnis0jesCBb7r3mjHWoVoSTI/view?usp=sharing" target="_blank"><em>full paper</em></a> which was awarded as an International Finalist by HiMCM.*
 
-Don't worry if some of the terms in the title seem alien to you, we will hopefully go over each one in this guide. 
-
 ## I. Purpose
 
 This code uses altered Markov Chains to predict how many hours people charged their phones at a public place based on two key features:
